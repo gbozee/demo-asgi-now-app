@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "name": "bottle-app",
+  "alias": "asgi-app",
+  "builds": [
+    {
+      "src": "index.py",
+      "use": "@gbozee/now-python-asgi",
+      "config": {
+        "maxLambdaSize": "15mb"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/.*",
+      "dest": "/"
+    }
+  ]
+}
