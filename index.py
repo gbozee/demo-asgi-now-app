@@ -25,4 +25,4 @@ async def homepage(request):
 @application.route("/post-call", methods=['POST'])
 async def postCall(request):
     json = await request.json()
-    return JSONResponse(json)
+    return JSONResponse({**json,"now":True})
