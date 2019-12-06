@@ -1,4 +1,4 @@
 # werkzeug
 # bottle==0.12.16
-starlette==0.12.4
+starlette==0.12.13
 # starlette==0.10.2
